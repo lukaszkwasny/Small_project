@@ -21,15 +21,16 @@
 <body>
 
     <script>
+        // Add funcion when i click space then show red bullet  
         window.addEventListener('keydown', function (e) {
-
+            // only space 
             if (e.keyCode !== 32) {
                 return;
             }
-
+            // that it would not show over the edge
             var maxWidth = window.innerWidth - 20;
             var maxHeight = window.innerHeight - 20;
-
+            // create div witch bullet and take him random position
             var bullet = document.createElement('div');
             bullet.className = 'bullet';
             bullet.style.left = randomNumber(0, maxWidth) + 'px';
@@ -38,7 +39,7 @@
             document.getElementsByTagName('body')[0].append(bullet);
 
         });
-
+        //model for random number 
         function randomNumber(min, max) {
             return min + Math.floor((max - min) * Math.random());
         }

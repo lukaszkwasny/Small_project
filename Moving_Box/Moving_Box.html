@@ -26,9 +26,10 @@
         window.addEventListener('keydown', function (e) {
             var
                 box = document.getElementById('box'),
+                //Returns the number of pixels that the top left corner of the current item from the left inside the node
                 left = box.offsetLeft,
                 top = box.offsetTop;
-
+            //change position when spress the button
             switch (e.keyCode) {
                 case 37:
                     left -= 10;
@@ -43,7 +44,7 @@
                     top += 10;
                     break;
             }
-
+            //Add to #box style
             box.style.top = Math.max(0, top) + 'px';
             box.style.left = Math.max(0, left) + 'px';
         });
