@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<html>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Wiek</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        // Napisz skrypt, który doda użytkowników z tabeli do tablicy (w postaci kolejnego wiersza tr i td).
+
+        var users = [{
+                name: 'Jan',
+                surname: 'Kowalski',
+                age: 50
+            },
+            {
+                name: 'Janina',
+                surname: 'Kowalska',
+                age: 48
+            },
+            {
+                name: 'Jasiu',
+                surname: 'Kowlczuk',
+                age: 14
+            }
+        ];
+
+        users.forEach(function (user) {
+            var html = '' +
+                '<td>' + user.name + '</td>' +
+                '<td>' + user.surname + '</td>' +
+                '<td>' + user.age + '</td>';
+
+
+            var tableRow = document.createElement('tr');
+            tableRow.innerHTML = html;
+
+            document.getElementsByTagName('tbody')[0].append(tableRow);
+
+        });
+    </script>
+</body>
+
+</html>
