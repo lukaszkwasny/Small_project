@@ -1,0 +1,12 @@
+button {
+    display: block;
+    margin: 10px auto;
+}
+
+li {
+    font-size: 15px;
+}
+
+.big {
+    font-size: 30px;
+}
