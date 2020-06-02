@@ -2,7 +2,7 @@ const btnAdd = document.querySelector(".add");
 const btnClean = document.querySelector(".clean");
 const btnshowAdvice = document.querySelector(".showAdvice");
 const btnshowOptions = document.querySelector(".showOptions");
-let advice = ["Fight", "think about it"];
+let advice = ["Fight", "Think about it"];
 
 
 const add = (e) => {
@@ -36,13 +36,15 @@ const showAdvice = (e) => {
 
 const showOptions = (e) => {
     e.preventDefault();
-    const costam = advice.map(text => text + "! ")
+    const addTextToArray = advice.map(text => text + "! ");
+    // or alert( adivice.joint("---"))
 
 
     if (advice.length <= 0) {
         alert("Options is empty. Add something")
     } else {
-        alert(`Advice: ${costam}`);
+        alert(`Advice: ${addTextToArray}`);
+
     };
 };
 
