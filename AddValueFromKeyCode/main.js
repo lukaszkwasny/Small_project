@@ -36,4 +36,4 @@ const changeColor = (e) => {
 
 };
 
-window.addEventListener('keydown', changeColor)
+window.addEventListener('keydown', changeColor);
