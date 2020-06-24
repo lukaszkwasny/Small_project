@@ -8,7 +8,6 @@ const starNumber = () => {
 
     let inputValue = document.querySelector("input").value;
     number = inputValue;
-    console.log(inputValue);
 
 };
 
