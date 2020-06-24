@@ -3,6 +3,13 @@ button {
     margin: 10px auto;
 }
 
+#reset {
+    display: block;
+    margin: 10px auto;
+    color: red;
+}
+
+
 div {
     width: 30px;
     height: 30px;
@@ -21,4 +28,16 @@ div {
     color: black;
     border: 2px solid black;
     margin-bottom: ;
+}
+
+#startNumber {
+    display: block;
+    margin: 10px auto;
+
+}
+
+#spanText {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
 }
