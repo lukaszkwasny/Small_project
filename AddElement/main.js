@@ -20,7 +20,7 @@ const init = window.onload = () => {
 };
 
 let createLiElements = () => {
-    // tutaj kod
+
 
     for (let i = 0; i < 10; i++) {
         const liList = document.createElement('li');
