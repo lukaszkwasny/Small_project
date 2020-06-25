@@ -6,6 +6,7 @@ let advice = ["Fight", "Think about it"];
 const input = document.querySelector("input");
 const h1 = document.querySelector("h1");
 
+
 const add = (e) => {
     e.preventDefault();
 
@@ -17,7 +18,6 @@ const add = (e) => {
         advice.push(newAdvice);
 
     };
-
     input.value = "";
 };
 
@@ -38,7 +38,8 @@ const showAdvice = (e) => {
 
 const showOptions = (e) => {
     e.preventDefault();
-    const addTextToArray = advice.map(text => text);
+    const addTextToArray = advice.map(text => text + "! ");
+    // or alert( adivice.joint("---"))
 
 
     if (advice.length <= 0) {
