@@ -9,9 +9,11 @@ const h1 = document.querySelector("h1");
 
 const add = (e) => {
     e.preventDefault();
-
-    const newAdvice = input.value;
-    if (input.value == "") {
+    const newAdvice = input.value.toLocaleLowerCase();
+    let boolean = advice.includes(newAdvice);
+    if (boolean) {
+        alert("Advice already exists")
+    } else if (newAdvice == "") {
         alert("Replace input")
     } else {
         alert(`Add ${newAdvice}`);
