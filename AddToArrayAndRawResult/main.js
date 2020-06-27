@@ -9,7 +9,7 @@ const h1 = document.querySelector("h1");
 
 const add = (e) => {
     e.preventDefault();
-    const newAdvice = input.value.toLocaleLowerCase();
+    const newAdvice = input.value.toLocaleLowerCase().replace(/ /g, '');
     let boolean = advice.includes(newAdvice);
     if (boolean) {
         alert("Advice already exists")
