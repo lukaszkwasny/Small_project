@@ -1,5 +1,5 @@
 document.body.addEventListener('click', (e) => {
-    console.log(e.clientX, e.clientY);
+
     const color = getColor(e);
     document.body.style.backgroundColor = color;
 })
@@ -18,4 +18,6 @@ const getColor = (e) => {
             return "blue"
         }
     }
+
+
 };
