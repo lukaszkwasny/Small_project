@@ -35,17 +35,18 @@
                 name: 'Jasiu',
                 surname: 'Kowlczuk',
                 age: 14
-            }
+            },
+
         ];
         // Show date form users 
         users.forEach(function (user) {
-            var html = '' +
+            let html = '' +
                 '<td>' + user.name + '</td>' +
                 '<td>' + user.surname + '</td>' +
                 '<td>' + user.age + '</td>';
 
 
-            var tableRow = document.createElement('tr');
+            const tableRow = document.createElement('tr');
             tableRow.innerHTML = html;
 
             document.getElementsByTagName('tbody')[0].append(tableRow);
