@@ -17,7 +17,7 @@ const hands = [...document.querySelectorAll('.select img')];
 function handSelection() {
 
     game.playerHand = this.dataset.option;
-    console.log(game.playerHand);
+
     hands.forEach(hand => hand.style.boxShadow = '');
     this.style.boxShadow = '0 0 0 4px red';
 
@@ -81,7 +81,7 @@ function startGame() {
     game.aiHand = computerChoice();
 
     const gameResult = checkResult(game.playerHand, game.aiHand);
-    console.log(gameResult);
+
     publishResult(game.playerHand, game.aiHand, gameResult);
     endGame();
 
