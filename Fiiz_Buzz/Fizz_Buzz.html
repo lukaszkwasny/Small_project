@@ -10,22 +10,27 @@
 
 <body>
     <!-- First method  -->
+    <ul></ul>
     <script>
         // loop for show text when it is correct number 3 or 5 and (3,5)
+        const ul = document.body.querySelector("ul");
+
         for (var i = 1; i <= 50; i++) {
+            const li = document.createElement("li");
+            ul.appendChild(li);
 
             var is5multiplier = i % 5 === 0,
                 is3multiplier = i % 3 === 0;
 
             if (is5multiplier && is3multiplier) {
-                console.log('FizzBuzz');
+                li.textContent = 'FizzBuzz';
             } else if (is5multiplier) {
-                console.log('Buzz');
-            } else if (is3multiplier) {
-                console.log('Fizz');
+                li.textContent = 'Buzz';
             } else {
-                console.log(i);
+                li.textContent = 'Fizz';
             }
+
+
 
         };
     </script>
